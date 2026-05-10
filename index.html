@@ -685,8 +685,10 @@
 
   function checkPassword() {
     if (document.getElementById('pw-input').value === 'pebblesea') {
+      const url = pendingUrl;
+      const target = pendingTarget;
       closePwModal();
-      window.open(pendingUrl, pendingTarget);
+      window.open(url, target);
     } else {
       document.getElementById('pw-error').textContent = 'Incorrect password. Please try again.';
       document.getElementById('pw-input').value = '';
