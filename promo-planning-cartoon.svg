@@ -1,0 +1,291 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0eeff"/>
+      <stop offset="100%" stop-color="#e4deff"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a3c"/>
+      <stop offset="100%" stop-color="#2e1568"/>
+    </linearGradient>
+    <linearGradient id="monitorBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eeeaf8"/>
+    </linearGradient>
+    <linearGradient id="tvGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2e1568"/>
+      <stop offset="100%" stop-color="#1a0a3c"/>
+    </linearGradient>
+    <linearGradient id="tagGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7563ff"/>
+      <stop offset="100%" stop-color="#5d1da8"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#7563ff" flood-opacity="0.18"/>
+    </filter>
+    <filter id="floatShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#5d1da8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="tvShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#3d1260" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background card -->
+  <rect width="640" height="400" rx="24" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid dots background -->
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="12" r="1.2" fill="#c5beff" opacity="0.5"/>
+  </pattern>
+  <rect width="640" height="400" rx="24" fill="url(#dots)"/>
+
+  <!-- ── MONITOR ── -->
+  <!-- Stand base -->
+  <ellipse cx="320" cy="356" rx="52" ry="8" fill="#d4ccf5" opacity="0.7"/>
+  <!-- Stand neck -->
+  <rect x="310" y="314" width="20" height="40" rx="4" fill="#ccc5f0"/>
+  <!-- Monitor body -->
+  <rect x="130" y="68" width="380" height="250" rx="16" fill="url(#monitorBody)" filter="url(#cardShadow)"/>
+  <!-- Screen bezel -->
+  <rect x="142" y="80" width="356" height="222" rx="10" fill="url(#screenGrad)"/>
+
+  <!-- ── SCREEN CONTENT: pricing calendar grid ── -->
+  <!-- Grid header bar -->
+  <rect x="150" y="88" width="340" height="22" rx="5" fill="#7563ff" opacity="0.9"/>
+  <text x="163" y="103" font-family="'Inter',sans-serif" font-size="9" font-weight="700" fill="white" letter-spacing="0.5">RETAIL PRICING ROADMAP</text>
+  <text x="440" y="103" font-family="'Inter',sans-serif" font-size="8" fill="rgba(255,255,255,0.7)">W32–W44</text>
+
+  <!-- Column headers row -->
+  <rect x="150" y="112" width="340" height="16" rx="0" fill="rgba(255,255,255,0.07)"/>
+  <!-- SKU label col -->
+  <text x="156" y="124" font-family="'Inter',sans-serif" font-size="7.5" fill="rgba(255,255,255,0.5)" font-weight="600">SKU</text>
+  <!-- Week col headers -->
+  <text x="218" y="124" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.45)">W32</text>
+  <text x="248" y="124" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.45)">W33</text>
+  <text x="278" y="124" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.45)">W34</text>
+  <text x="308" y="124" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.45)">W35</text>
+  <text x="338" y="124" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.45)">W36</text>
+  <text x="368" y="124" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.45)">W37</text>
+  <text x="398" y="124" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.45)">W38</text>
+  <text x="428" y="124" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.45)">W39</text>
+  <text x="458" y="124" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.45)">W40</text>
+
+  <!-- Promo banner pill spanning weeks -->
+  <rect x="275" y="114" width="100" height="12" rx="5" fill="#ff6b6b" opacity="0.85"/>
+  <text x="325" y="123" font-family="'Inter',sans-serif" font-size="6.5" fill="white" font-weight="700" text-anchor="middle">Labor Day</text>
+  <rect x="395" y="114" width="72" height="12" rx="5" fill="#f0a500" opacity="0.9"/>
+  <text x="431" y="123" font-family="'Inter',sans-serif" font-size="6.5" fill="white" font-weight="700" text-anchor="middle">Prime Day</text>
+
+  <!-- Row 1 -->
+  <rect x="150" y="130" width="340" height="22" rx="0" fill="rgba(255,255,255,0.04)"/>
+  <text x="156" y="145" font-family="'Inter',sans-serif" font-size="7.5" fill="rgba(255,255,255,0.7)" font-weight="500">43" 4K</text>
+  <!-- locked cells (grey) -->
+  <rect x="212" y="132" width="26" height="18" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <text x="225" y="145" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="middle">$249</text>
+  <rect x="242" y="132" width="26" height="18" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <text x="255" y="145" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="middle">$249</text>
+  <!-- active/editable cells -->
+  <rect x="272" y="132" width="26" height="18" rx="3" fill="rgba(117,99,255,0.35)"/>
+  <text x="285" y="145" font-family="'Inter',sans-serif" font-size="7" fill="#c5beff" text-anchor="middle" font-weight="600">$219</text>
+  <rect x="302" y="132" width="26" height="18" rx="3" fill="rgba(117,99,255,0.35)"/>
+  <text x="315" y="145" font-family="'Inter',sans-serif" font-size="7" fill="#c5beff" text-anchor="middle" font-weight="600">$219</text>
+  <rect x="332" y="132" width="26" height="18" rx="3" fill="rgba(117,99,255,0.35)"/>
+  <text x="345" y="145" font-family="'Inter',sans-serif" font-size="7" fill="#c5beff" text-anchor="middle" font-weight="600">$219</text>
+  <rect x="362" y="132" width="26" height="18" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <text x="375" y="145" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.55)" text-anchor="middle">$249</text>
+  <!-- Prime Day highlighted -->
+  <rect x="392" y="132" width="26" height="18" rx="3" fill="rgba(240,165,0,0.4)"/>
+  <text x="405" y="145" font-family="'Inter',sans-serif" font-size="7" fill="#ffd770" text-anchor="middle" font-weight="600">$199</text>
+  <rect x="422" y="132" width="26" height="18" rx="3" fill="rgba(240,165,0,0.4)"/>
+  <text x="435" y="145" font-family="'Inter',sans-serif" font-size="7" fill="#ffd770" text-anchor="middle" font-weight="600">$199</text>
+  <rect x="452" y="132" width="26" height="18" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <text x="465" y="145" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.55)" text-anchor="middle">$249</text>
+
+  <!-- Row 2 -->
+  <rect x="150" y="154" width="340" height="22" rx="0" fill="rgba(255,255,255,0.02)"/>
+  <text x="156" y="169" font-family="'Inter',sans-serif" font-size="7.5" fill="rgba(255,255,255,0.7)" font-weight="500">55" 4K</text>
+  <rect x="212" y="156" width="26" height="18" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <text x="225" y="169" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="middle">$349</text>
+  <rect x="242" y="156" width="26" height="18" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <text x="255" y="169" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="middle">$349</text>
+  <rect x="272" y="156" width="26" height="18" rx="3" fill="rgba(117,99,255,0.35)"/>
+  <text x="285" y="169" font-family="'Inter',sans-serif" font-size="7" fill="#c5beff" text-anchor="middle" font-weight="600">$299</text>
+  <rect x="302" y="156" width="26" height="18" rx="3" fill="rgba(117,99,255,0.35)"/>
+  <text x="315" y="169" font-family="'Inter',sans-serif" font-size="7" fill="#c5beff" text-anchor="middle" font-weight="600">$299</text>
+  <rect x="332" y="156" width="26" height="18" rx="3" fill="rgba(117,99,255,0.35)"/>
+  <text x="345" y="169" font-family="'Inter',sans-serif" font-size="7" fill="#c5beff" text-anchor="middle" font-weight="600">$299</text>
+  <rect x="362" y="156" width="26" height="18" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <text x="375" y="169" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.55)" text-anchor="middle">$349</text>
+  <rect x="392" y="156" width="26" height="18" rx="3" fill="rgba(240,165,0,0.4)"/>
+  <text x="405" y="169" font-family="'Inter',sans-serif" font-size="7" fill="#ffd770" text-anchor="middle" font-weight="600">$279</text>
+  <rect x="422" y="156" width="26" height="18" rx="3" fill="rgba(240,165,0,0.4)"/>
+  <text x="435" y="169" font-family="'Inter',sans-serif" font-size="7" fill="#ffd770" text-anchor="middle" font-weight="600">$279</text>
+  <rect x="452" y="156" width="26" height="18" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <text x="465" y="169" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.55)" text-anchor="middle">$349</text>
+
+  <!-- Row 3 -->
+  <rect x="150" y="178" width="340" height="22" rx="0" fill="rgba(255,255,255,0.04)"/>
+  <text x="156" y="193" font-family="'Inter',sans-serif" font-size="7.5" fill="rgba(255,255,255,0.7)" font-weight="500">65" 4K</text>
+  <rect x="212" y="180" width="26" height="18" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <text x="225" y="193" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="middle">$499</text>
+  <rect x="242" y="180" width="26" height="18" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <text x="255" y="193" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="middle">$499</text>
+  <rect x="272" y="180" width="26" height="18" rx="3" fill="rgba(255,107,107,0.3)"/>
+  <text x="285" y="193" font-family="'Inter',sans-serif" font-size="7" fill="#ffadad" text-anchor="middle" font-weight="600">$429</text>
+  <rect x="302" y="180" width="26" height="18" rx="3" fill="rgba(255,107,107,0.3)"/>
+  <text x="315" y="193" font-family="'Inter',sans-serif" font-size="7" fill="#ffadad" text-anchor="middle" font-weight="600">$429</text>
+  <rect x="332" y="180" width="26" height="18" rx="3" fill="rgba(255,107,107,0.3)"/>
+  <text x="345" y="193" font-family="'Inter',sans-serif" font-size="7" fill="#ffadad" text-anchor="middle" font-weight="600">$429</text>
+  <rect x="362" y="180" width="26" height="18" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <text x="375" y="193" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.55)" text-anchor="middle">$499</text>
+  <rect x="392" y="180" width="26" height="18" rx="3" fill="rgba(240,165,0,0.4)"/>
+  <text x="405" y="193" font-family="'Inter',sans-serif" font-size="7" fill="#ffd770" text-anchor="middle" font-weight="600">$399</text>
+  <rect x="422" y="180" width="26" height="18" rx="3" fill="rgba(240,165,0,0.4)"/>
+  <text x="435" y="193" font-family="'Inter',sans-serif" font-size="7" fill="#ffd770" text-anchor="middle" font-weight="600">$399</text>
+  <rect x="452" y="180" width="26" height="18" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <text x="465" y="193" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.55)" text-anchor="middle">$499</text>
+
+  <!-- Row 4 – faded -->
+  <rect x="150" y="202" width="340" height="22" rx="0" fill="rgba(255,255,255,0.02)"/>
+  <text x="156" y="217" font-family="'Inter',sans-serif" font-size="7.5" fill="rgba(255,255,255,0.4)" font-weight="500">75" 4K</text>
+  <rect x="212" y="204" width="26" height="18" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <text x="225" y="217" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.2)" text-anchor="middle">$699</text>
+  <rect x="242" y="204" width="26" height="18" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <text x="255" y="217" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.2)" text-anchor="middle">$699</text>
+  <rect x="272" y="204" width="26" height="18" rx="3" fill="rgba(117,99,255,0.2)"/>
+  <text x="285" y="217" font-family="'Inter',sans-serif" font-size="7" fill="rgba(197,190,255,0.6)" text-anchor="middle">$599</text>
+  <rect x="302" y="204" width="26" height="18" rx="3" fill="rgba(117,99,255,0.2)"/>
+  <text x="315" y="217" font-family="'Inter',sans-serif" font-size="7" fill="rgba(197,190,255,0.6)" text-anchor="middle">$599</text>
+  <rect x="332" y="204" width="26" height="18" rx="3" fill="rgba(117,99,255,0.2)"/>
+  <text x="345" y="217" font-family="'Inter',sans-serif" font-size="7" fill="rgba(197,190,255,0.6)" text-anchor="middle">$599</text>
+
+  <!-- Divider lines between rows -->
+  <line x1="150" y1="152" x2="490" y2="152" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="150" y1="176" x2="490" y2="176" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="150" y1="200" x2="490" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="150" y1="224" x2="490" y2="224" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Vertical SKU divider -->
+  <line x1="208" y1="112" x2="208" y2="290" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <!-- Bottom status bar -->
+  <rect x="150" y="252" width="340" height="28" rx="0" fill="rgba(255,255,255,0.05)"/>
+  <!-- Status chips on bottom bar -->
+  <rect x="158" y="258" width="52" height="14" rx="7" fill="rgba(117,99,255,0.6)"/>
+  <text x="184" y="268" font-family="'Inter',sans-serif" font-size="7" fill="white" font-weight="600" text-anchor="middle">3 Pending</text>
+  <rect x="216" y="258" width="52" height="14" rx="7" fill="rgba(34,197,94,0.5)"/>
+  <text x="242" y="268" font-family="'Inter',sans-serif" font-size="7" fill="white" font-weight="600" text-anchor="middle">✓ Approved</text>
+  <rect x="274" y="258" width="66" height="14" rx="7" fill="rgba(240,165,0,0.5)"/>
+  <text x="307" y="268" font-family="'Inter',sans-serif" font-size="7" fill="white" font-weight="600" text-anchor="middle">↻ Cascading…</text>
+
+  <!-- Cursor / active cell indicator -->
+  <rect x="272" y="132" width="26" height="18" rx="3" fill="none" stroke="#7563ff" stroke-width="1.5" opacity="0.9"/>
+
+  <!-- ── TV DEVICE (left side) ── -->
+  <g filter="url(#floatShadow)" transform="translate(34, 150)">
+    <!-- TV body -->
+    <rect x="0" y="0" width="72" height="46" rx="6" fill="url(#tvGrad)"/>
+    <!-- TV screen -->
+    <rect x="5" y="5" width="62" height="36" rx="3" fill="#0a0520"/>
+    <!-- Screen glow -->
+    <rect x="5" y="5" width="62" height="36" rx="3" fill="url(#screenGrad)" opacity="0.7"/>
+    <!-- Mini Roku logo on TV -->
+    <circle cx="36" cy="23" r="8" fill="rgba(117,99,255,0.4)" />
+    <text x="36" y="27" font-family="'Inter',sans-serif" font-size="8" fill="rgba(255,255,255,0.7)" text-anchor="middle" font-weight="700">R</text>
+    <!-- TV stand -->
+    <rect x="30" y="46" width="12" height="8" rx="2" fill="#3d1260"/>
+    <rect x="22" y="54" width="28" height="5" rx="3" fill="#2e1568"/>
+  </g>
+
+  <!-- ── PRICE TAG (hanging off TV) ── -->
+  <g transform="translate(96, 148)" filter="url(#floatShadow)">
+    <!-- tag string -->
+    <line x1="0" y1="0" x2="10" y2="-18" stroke="#9980ff" stroke-width="1.2" stroke-dasharray="2,2"/>
+    <circle cx="10" cy="-18" r="2" fill="#9980ff"/>
+    <!-- tag body -->
+    <rect x="-18" y="0" width="50" height="30" rx="6" fill="url(#tagGrad)"/>
+    <!-- hole -->
+    <circle cx="-8" cy="8" r="3" fill="white" opacity="0.6"/>
+    <text x="18" y="12" font-family="'Inter',sans-serif" font-size="7" fill="rgba(255,255,255,0.7)" text-anchor="middle">MSRP</text>
+    <text x="18" y="24" font-family="'Inter',sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="700">$249</text>
+  </g>
+
+  <!-- ── FLOATING SALE BADGE (top left) ── -->
+  <g transform="rotate(-12, 82, 78)" filter="url(#floatShadow)">
+    <circle cx="82" cy="78" r="32" fill="#ff6b6b"/>
+    <circle cx="82" cy="78" r="28" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <text x="82" y="74" font-family="'Inter',sans-serif" font-size="9" fill="white" font-weight="800" text-anchor="middle" letter-spacing="1">SALE</text>
+    <text x="82" y="87" font-family="'Inter',sans-serif" font-size="13" fill="white" font-weight="900" text-anchor="middle">-12%</text>
+  </g>
+
+  <!-- ── APPROVAL BADGE (top right) ── -->
+  <g transform="rotate(8, 562, 88)" filter="url(#floatShadow)">
+    <rect x="530" y="56" width="70" height="64" rx="12" fill="white"/>
+    <rect x="530" y="56" width="70" height="64" rx="12" fill="none" stroke="#7563ff" stroke-width="1.5"/>
+    <!-- checkmark circle -->
+    <circle cx="565" cy="82" r="14" fill="#7563ff"/>
+    <polyline points="557,82 563,88 573,76" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="565" y="107" font-family="'Inter',sans-serif" font-size="7.5" fill="#7563ff" text-anchor="middle" font-weight="700">Approved</text>
+    <text x="565" y="117" font-family="'Inter',sans-serif" font-size="6.5" fill="#aaa0cc" text-anchor="middle">FP&amp;A ✓</text>
+  </g>
+
+  <!-- ── CALENDAR CHIP (bottom right) ── -->
+  <g transform="translate(512, 288)" filter="url(#floatShadow)">
+    <rect x="0" y="0" width="96" height="78" rx="12" fill="white"/>
+    <!-- calendar header -->
+    <rect x="0" y="0" width="96" height="22" rx="12" fill="#7563ff"/>
+    <rect x="0" y="12" width="96" height="10" fill="#7563ff"/>
+    <text x="48" y="15" font-family="'Inter',sans-serif" font-size="8" fill="white" font-weight="700" text-anchor="middle">September</text>
+    <!-- calendar grid dots -->
+    <circle cx="20" cy="36" r="4" fill="#e4e0f8"/>
+    <circle cx="36" cy="36" r="4" fill="#e4e0f8"/>
+    <circle cx="52" cy="36" r="4" fill="#7563ff"/>
+    <circle cx="68" cy="36" r="4" fill="#e4e0f8"/>
+    <circle cx="84" cy="36" r="4" fill="#e4e0f8"/>
+    <circle cx="20" cy="50" r="4" fill="#e4e0f8"/>
+    <circle cx="36" cy="50" r="4" fill="#e4e0f8"/>
+    <circle cx="52" cy="50" r="4" fill="#ff6b6b"/>
+    <circle cx="68" cy="50" r="4" fill="#ff6b6b"/>
+    <circle cx="84" cy="50" r="4" fill="#e4e0f8"/>
+    <circle cx="20" cy="64" r="4" fill="#e4e0f8"/>
+    <circle cx="36" cy="64" r="4" fill="#e4e0f8"/>
+    <circle cx="52" cy="64" r="4" fill="#e4e0f8"/>
+    <circle cx="68" cy="64" r="4" fill="#e4e0f8"/>
+    <circle cx="84" cy="64" r="4" fill="#e4e0f8"/>
+    <text x="52" y="38" font-family="'Inter',sans-serif" font-size="5.5" fill="white" text-anchor="middle" font-weight="700">L</text>
+  </g>
+
+  <!-- ── CASCADE ARROW (between price cells) ── -->
+  <g opacity="0.85">
+    <path d="M 307 175 Q 307 190 307 202" stroke="#7563ff" stroke-width="1.5" stroke-dasharray="3,2" fill="none" marker-end="url(#cascArrow)"/>
+    <defs>
+      <marker id="cascArrow" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+        <path d="M0,1 L7,4 L0,7 Z" fill="#7563ff"/>
+      </marker>
+    </defs>
+  </g>
+
+  <!-- ── MINI BAR CHART (bottom left) ── -->
+  <g transform="translate(34, 238)" filter="url(#floatShadow)">
+    <rect x="0" y="0" width="82" height="64" rx="10" fill="white"/>
+    <text x="41" y="13" font-family="'Inter',sans-serif" font-size="6.5" fill="#8888aa" text-anchor="middle" font-weight="600">SALES IMPACT</text>
+    <!-- bars -->
+    <rect x="10" y="36" width="10" height="20" rx="2" fill="#c5beff"/>
+    <rect x="24" y="28" width="10" height="28" rx="2" fill="#9980ff"/>
+    <rect x="38" y="20" width="10" height="36" rx="2" fill="#7563ff"/>
+    <rect x="52" y="14" width="10" height="42" rx="2" fill="#5d1da8"/>
+    <rect x="66" y="22" width="10" height="34" rx="2" fill="#9980ff"/>
+    <!-- baseline -->
+    <line x1="8" y1="57" x2="78" y2="57" stroke="#e4e4f0" stroke-width="1"/>
+    <!-- up arrow trend -->
+    <polyline points="10,53 28,45 45,37 62,28" fill="none" stroke="#ff6b6b" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- ── DECORATIVE DOTS ── -->
+  <circle cx="580" cy="370" r="16" fill="#7563ff" opacity="0.12"/>
+  <circle cx="56"  cy="370" r="12" fill="#5d1da8" opacity="0.1"/>
+  <circle cx="600" cy="200" r="6"  fill="#7563ff" opacity="0.2"/>
+  <circle cx="30"  cy="120" r="5"  fill="#ff6b6b" opacity="0.2"/>
+
+</svg>
