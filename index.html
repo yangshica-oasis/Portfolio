@@ -332,6 +332,90 @@
       font-size: 12px;
     }
     footer strong { color: rgba(255,255,255,.8); }
+
+    /* ── RESPONSIVE: TABLET (≤1024px) ── */
+    @media (max-width: 1024px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 120px 40px 72px;
+      }
+      .hero-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 24px;
+      }
+      .stat-item { flex: 1 1 120px; }
+      .stat-divider { display: none; }
+      .section { padding: 60px 40px; }
+      .section-full .inner { padding: 0 40px; }
+      .project-grid { grid-template-columns: repeat(2, 1fr); }
+      .skillset-grid { grid-template-columns: repeat(2, 1fr); }
+      .process-row { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+      .process-row::before { display: none; }
+      .about-grid { grid-template-columns: 1fr; gap: 32px; }
+      .about-photo { width: 160px; height: 160px; }
+    }
+
+    /* ── RESPONSIVE: MOBILE (≤768px) ── */
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 100px 24px 48px;
+        gap: 32px;
+      }
+      .hero h1 { font-size: 36px; }
+      .hero-desc { font-size: 15px; }
+      .hero-actions { flex-wrap: wrap; gap: 12px; }
+      .hero-stats {
+        flex-direction: column;
+        padding: 24px;
+        gap: 16px;
+      }
+      .stat-item .num { font-size: 28px; }
+      .stat-divider { display: block; }
+
+      .section { padding: 48px 20px; }
+      .section-full .inner { padding: 0 20px; }
+      .contact-band { padding: 60px 20px; }
+      .contact-band h2 { font-size: 28px; }
+      .contact-links { flex-direction: column; align-items: center; gap: 10px; }
+
+      .featured-card {
+        grid-template-columns: 1fr;
+      }
+      .featured-visual { min-height: 240px; }
+      .featured-content { padding: 28px 24px; }
+      .featured-content h3 { font-size: 22px; }
+
+      .project-grid { grid-template-columns: 1fr; gap: 16px; }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .about-photo { width: 120px; height: 120px; }
+      .about-actions { flex-wrap: wrap; gap: 12px; }
+
+      .skillset-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+
+      .process-row {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .process-row::before { display: none; }
+
+      footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 <body>

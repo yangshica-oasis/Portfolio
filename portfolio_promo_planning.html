@@ -762,6 +762,115 @@
     .evo-delta-after  .evo-delta-label { color: #15803d; }
     .evo-delta p { margin: 0; color: var(--mid); }
     .evo-divider { height: 1px; background: var(--rule); margin: 48px 0; }
+
+    /* ── RESPONSIVE: TABLET (≤1024px) ── */
+    @media (max-width: 1024px) {
+      nav { padding: 0 32px; }
+      .nav-links { display: none; }
+
+      .hero {
+        padding: 80px 40px 0;
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .hero-title { font-size: 40px; }
+      .hero-img { border-radius: 8px 8px 0 0; }
+      .hero-img iframe { border-radius: 8px 8px 0 0; }
+
+      .container { padding: 0 24px; }
+      .meta-grid { grid-template-columns: repeat(2, 1fr); }
+      .outcome-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .process-steps {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .process-steps::before { display: none; }
+      .step { flex: 1 1 calc(33% - 20px); min-width: 160px; }
+
+      .fd-body { grid-template-columns: 1fr; }
+      .fd-prompt-pane { border-right: none; border-bottom: 1px solid var(--rule); }
+
+      .aj-split-body { grid-template-columns: 1fr; }
+      .aj-chat-pane { border-right: none; border-bottom: 1px solid var(--rule); }
+
+      .df-body { grid-template-columns: 1fr; }
+      .df-left { border-right: none; border-bottom: 1px solid var(--rule); }
+
+      .ai-front-title { font-size: 36px; }
+      .ai-front-copy { padding: 28px 32px; }
+      .ai-back-inner { padding: 24px 32px; }
+
+      .journey-wrap { overflow-x: auto; }
+
+      footer { padding: 24px 40px; }
+    }
+
+    /* ── RESPONSIVE: MOBILE (≤768px) ── */
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+
+      .hero {
+        padding: 80px 20px 0;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .hero-title { font-size: 32px; }
+      .hero-desc { font-size: 15px; }
+      .hero-img { border-radius: 8px 8px 0 0; }
+      .hero-img iframe { border-radius: 8px 8px 0 0; }
+      .hero-screens { padding-top: 24px; }
+      .hero-screen-before { left: -12px; right: 20px; }
+      .hero-screen-after { margin-left: 10px; }
+
+      .container { padding: 0 20px; }
+
+      .meta-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+      .outcome-grid { grid-template-columns: 1fr; }
+
+      .process-steps {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .process-steps::before { display: none; }
+      .step { padding: 0; }
+
+      .ai-flip-card { height: auto; min-height: 260px; }
+      .ai-front-title { font-size: 28px; }
+      .ai-front-copy { padding: 24px 24px; }
+      .ai-back-inner { padding: 20px 24px; }
+
+      .fd-body { grid-template-columns: 1fr; }
+      .fd-prompt-pane { border-right: none; border-bottom: 1px solid var(--rule); }
+
+      .aj-split-body { grid-template-columns: 1fr; }
+      .aj-chat-pane { border-right: none; border-bottom: 1px solid var(--rule); }
+
+      .df-body { grid-template-columns: 1fr; }
+      .df-left { border-right: none; border-bottom: 1px solid var(--rule); }
+
+      .journey-wrap { overflow-x: auto; }
+      .journey-table { min-width: 680px; }
+
+      .comp-table { overflow-x: auto; display: block; }
+
+      .figma-cta { padding: 32px 20px; }
+      .figma-cta h3 { font-size: 20px; }
+
+      .evo-delta { flex-direction: column; }
+      .evo-delta-before { border-right: none; border-bottom: 1px solid var(--rule); }
+
+      footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        padding: 20px 20px;
+      }
+
+      .contact-band { padding: 60px 20px; }
+    }
   </style>
 </head>
 <body>
