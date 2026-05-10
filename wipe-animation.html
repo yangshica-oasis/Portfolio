@@ -46,13 +46,17 @@
   /* After: normal color, full width, sits below */
   .layer-after { z-index: 1; }
 
-  /* Before: grey, sits on top, clipped to left portion */
+  /* Before: purple-tinted, sits on top, clipped to left portion */
   .layer-before {
     z-index: 2;
     clip-path: inset(0 50% 0 0);
   }
-  .layer-before img {
-    filter: grayscale(1) brightness(0.78);
+  .layer-before::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(84, 7, 170, 0.08);
+    pointer-events: none;
   }
 
   /* Wipe line */
