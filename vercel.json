@@ -1,7 +1,3 @@
 {
-  "cleanUrls": false,
-  "outputDirectory": ".",
-  "rewrites": [
-    { "source": "/", "destination": "/portfolio_index.html" }
-  ]
+  "cleanUrls": false
 }
